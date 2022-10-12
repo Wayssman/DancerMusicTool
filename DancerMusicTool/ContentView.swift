@@ -8,9 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: Setup Views
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            NavigationView {
+                LibraryListView()
+                    .navigationTitle("Imported Files")
+                    .toolbar {
+                        Button {
+                            exploreFiles()
+                        } label: {
+                            Image(systemName: "folder.fill.badge.plus")
+                        }
+                    }
+            }
+            .tabItem {
+                Image(systemName: "book.fill")
+                Text("Library")
+            }
+        }
+        .ignoresSafeArea()
+    }
+    
+    // MARK: User Interactions
+    private func exploreFiles() {
+        print("Explore Files")
     }
 }
 

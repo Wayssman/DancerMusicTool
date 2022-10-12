@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82D3A8528F76334006203E2 /* LibraryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D3A8428F76334006203E2 /* LibraryItem.swift */; };
+		A82D3A8728F76A16006203E2 /* Launchscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82D3A8628F76A16006203E2 /* Launchscreen.storyboard */; };
 		A843313128F3531D00A097F2 /* DancerMusicToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843313028F3531D00A097F2 /* DancerMusicToolApp.swift */; };
 		A843313328F3531D00A097F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843313228F3531D00A097F2 /* ContentView.swift */; };
 		A843313528F3531D00A097F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A843313428F3531D00A097F2 /* Assets.xcassets */; };
 		A843313828F3531D00A097F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A843313728F3531D00A097F2 /* Preview Assets.xcassets */; };
+		A843314028F35E9300A097F2 /* LibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843313F28F35E9300A097F2 /* LibraryListView.swift */; };
+		A843314428F3629100A097F2 /* LibraryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A843314328F3629100A097F2 /* LibraryListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A82D3A8428F76334006203E2 /* LibraryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryItem.swift; sourceTree = "<group>"; };
+		A82D3A8628F76A16006203E2 /* Launchscreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launchscreen.storyboard; sourceTree = "<group>"; };
 		A843312D28F3531D00A097F2 /* DancerMusicTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DancerMusicTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A843313028F3531D00A097F2 /* DancerMusicToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancerMusicToolApp.swift; sourceTree = "<group>"; };
 		A843313228F3531D00A097F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A843313428F3531D00A097F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A843313728F3531D00A097F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A843313928F3531D00A097F2 /* DancerMusicTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DancerMusicTool.entitlements; sourceTree = "<group>"; };
+		A843313F28F35E9300A097F2 /* LibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListView.swift; sourceTree = "<group>"; };
+		A843314328F3629100A097F2 /* LibraryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 		A843312428F3531D00A097F2 = {
 			isa = PBXGroup;
 			children = (
+				A82D3A8628F76A16006203E2 /* Launchscreen.storyboard */,
 				A843312F28F3531D00A097F2 /* DancerMusicTool */,
 				A843312E28F3531D00A097F2 /* Products */,
 			);
@@ -52,6 +61,7 @@
 		A843312F28F3531D00A097F2 /* DancerMusicTool */ = {
 			isa = PBXGroup;
 			children = (
+				A843314128F3620F00A097F2 /* Library */,
 				A843313028F3531D00A097F2 /* DancerMusicToolApp.swift */,
 				A843313228F3531D00A097F2 /* ContentView.swift */,
 				A843313428F3531D00A097F2 /* Assets.xcassets */,
@@ -67,6 +77,32 @@
 				A843313728F3531D00A097F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A843314128F3620F00A097F2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A843314228F3621600A097F2 /* View */,
+				A843314528F3629C00A097F2 /* Entities */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A843314228F3621600A097F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A843313F28F35E9300A097F2 /* LibraryListView.swift */,
+				A843314328F3629100A097F2 /* LibraryListRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A843314528F3629C00A097F2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A82D3A8428F76334006203E2 /* LibraryItem.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82D3A8728F76A16006203E2 /* Launchscreen.storyboard in Resources */,
 				A843313828F3531D00A097F2 /* Preview Assets.xcassets in Resources */,
 				A843313528F3531D00A097F2 /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82D3A8528F76334006203E2 /* LibraryItem.swift in Sources */,
+				A843314428F3629100A097F2 /* LibraryListRow.swift in Sources */,
 				A843313328F3531D00A097F2 /* ContentView.swift in Sources */,
+				A843314028F35E9300A097F2 /* LibraryListView.swift in Sources */,
 				A843313128F3531D00A097F2 /* DancerMusicToolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +241,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -254,7 +294,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -275,6 +315,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = Launchscreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -282,8 +324,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olwastd.DancerMusicTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +348,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = Launchscreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -309,8 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olwastd.DancerMusicTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
